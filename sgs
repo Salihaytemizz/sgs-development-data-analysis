@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+"""SGS - Smart Growth Solutions"""
+import pandas as pd
+import sqlite3
+import sys
+
+if len(sys.argv) > 1 and sys.argv[1] == 'analyze':
+    print("🧠 SGS")
+    
+    # Excel
+    try:
+        df = pd.read_excel('image-table-cs.xlsx')
+        print(f"📊 {len(df)} ürün")
+        
+        for col in df.columns:
+            if 'görüntülenme' in col.lower():
+                top = df.loc[df[col].idxmax(), 'Ürün Adı']
+                print(f"🏆 {top}")
+                break
+    except: pass
+    
+    # SQL
+    try:
+        conn = sqlite3.connect('sales.db')
+        result = conn.execute("SELECT \"Ürün Adı\", Fiyat FROM tuzla_loglar ORDER BY Fiyat DESC LIMIT 1").fetchone()
+        print(f"💰 {result[0]} ({result[1]}₺)")
+        conn.close()
+    except: pass
+    
+    print("✅ Tamam")
+else:
+    print("Kullanım: sgs analyze")

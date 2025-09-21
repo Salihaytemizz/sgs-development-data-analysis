@@ -1,0 +1,142 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>SGS Advanced Analiz Raporu</title>
+            <meta charset="UTF-8">
+            <style>
+                body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; margin: 0; background: #f8f9fa; }
+                .container { max-width: 1200px; margin: 0 auto; background: white; min-height: 100vh; }
+                .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; text-align: center; }
+                .score-circle { display: inline-block; width: 120px; height: 120px; border-radius: 50%; border: 8px solid rgba(255,255,255,0.3); margin: 20px; position: relative; }
+                .score-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; font-weight: bold; }
+                .content { padding: 30px; }
+                .section { margin: 30px 0; }
+                .section h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+                .insight-card, .recommendation-card, .trend-card { background: #f8f9fa; margin: 15px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+                .rec-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+                .priority-badge { padding: 4px 12px; border-radius: 20px; color: white; font-size: 12px; font-weight: bold; }
+                .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0; }
+                .metric-card { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 20px; border-radius: 12px; text-align: center; }
+                .data-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+                .data-table th, .data-table td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+                .data-table th { background: #3498db; color: white; }
+                .footer { background: #2c3e50; color: white; padding: 30px; text-align: center; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>🚀 SGS Advanced - Yapay Zeka Analizi</h1>
+                    <p>Smart Growth Solutions</p>
+                    <div class="score-circle">
+                        <div class="score-text">99</div>
+                    </div>
+                    <p>Genel Performans Skoru</p>
+                </div>
+                
+                <div class="content">
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <h3>📊 Toplam İçgörü</h3>
+                            <h2>4</h2>
+                        </div>
+                        <div class="metric-card">
+                            <h3>💡 Aksiyon Önerisi</h3>
+                            <h2>3</h2>
+                        </div>
+                        <div class="metric-card">
+                            <h3>📈 Trend Analizi</h3>
+                            <h2>2</h2>
+                        </div>
+                        <div class="metric-card">
+                            <h3>⚠️ Kritik Uyarı</h3>
+                            <h2>1</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>🧠 Yapay Zeka İçgörüleri</h2>
+                        
+            <div class="insight-card" style="border-left: 4px solid #28a745;">
+                <h4>En Performanslı Ürünler</h4>
+                <div class="insight-data"><table class='data-table'><tr><th>Ürün Adı</th><th>GÜNCEL DÖNEM GÖRÜNTÜLEME (02.09-08.09)</th></tr><tr><td>Cookshop Serpme Kahvaltı 2 Kişilik</td><td>103</td></tr><tr><td>Teriyaki Soslu Tavuk Bowl</td><td>72</td></tr><tr><td>COOKSHOP. Burger</td><td>72</td></tr><tr><td>Pizza Akdeniz</td><td>67</td></tr><tr><td>Anatolian Pizza</td><td>61</td></tr></table></div>
+            </div>
+            
+            <div class="insight-card" style="border-left: 4px solid #ffc107;">
+                <h4>En İyi Fiyat-Performans</h4>
+                <div class="insight-data"><table class='data-table'><tr><th>Ürün Adı</th><th>Fiyat</th><th>fiyat_performans</th></tr><tr><td>Pizza Akdeniz</td><td>475</td><td>0.1407563025210084</td></tr><tr><td>Teriyaki Soslu Tavuk Bowl</td><td>540</td><td>0.133086876155268</td></tr><tr><td>COOKSHOP. Burger</td><td>560</td><td>0.12834224598930483</td></tr><tr><td>Anatolian Pizza</td><td>495</td><td>0.12298387096774194</td></tr><tr><td>Ocean</td><td>190</td><td>0.11518324607329843</td></tr></table></div>
+            </div>
+            
+            <div class="insight-card" style="border-left: 4px solid #17a2b8;">
+                <h4>Kategori Performans Analizi</h4>
+                <div class="insight-data"><table class='data-table'><tr><td><strong>Alkollü Kahveler > Alkollü Kahveler</strong></td><td>{'Ort_Görüntülenme': 1.5, 'Ort_Fiyat': 375.0, 'Ürün_Sayısı': 2}</td></tr><tr><td><strong>Alkollü İçecekler > Beyaz Şarap Kadeh</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 358.75, 'Ürün_Sayısı': 4}</td></tr><tr><td><strong>Alkollü İçecekler > Beyaz Şarap Şişe</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 1579.0, 'Ürün_Sayısı': 10}</td></tr><tr><td><strong>Alkollü İçecekler > Biralar</strong></td><td>{'Ort_Görüntülenme': 0.17, 'Ort_Fiyat': 261.67, 'Ürün_Sayısı': 18}</td></tr><tr><td><strong>Alkollü İçecekler > COOKSHOP Kokteyller</strong></td><td>{'Ort_Görüntülenme': 1.58, 'Ort_Fiyat': 455.0, 'Ürün_Sayısı': 12}</td></tr><tr><td><strong>Alkollü İçecekler > Klasik Kokteyller</strong></td><td>{'Ort_Görüntülenme': 6.0, 'Ort_Fiyat': 455.0, 'Ürün_Sayısı': 11}</td></tr><tr><td><strong>Alkollü İçecekler > Konyak</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 505.0, 'Ürün_Sayısı': 2}</td></tr><tr><td><strong>Alkollü İçecekler > Kırmızı Şarap Kadeh</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 378.0, 'Ürün_Sayısı': 5}</td></tr><tr><td><strong>Alkollü İçecekler > Kırmızı Şarap Şişe</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 1810.56, 'Ürün_Sayısı': 9}</td></tr><tr><td><strong>Alkollü İçecekler > Rakı</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 1357.5, 'Ürün_Sayısı': 8}</td></tr><tr><td><strong>Alkollü İçecekler > Rose & Blush / Kadeh</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 390.0, 'Ürün_Sayısı': 2}</td></tr><tr><td><strong>Alkollü İçecekler > Rose & Blush / Şişe</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 1465.0, 'Ürün_Sayısı': 3}</td></tr><tr><td><strong>Alkollü İçecekler > Tekila & Vermut</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 338.0, 'Ürün_Sayısı': 5}</td></tr><tr><td><strong>Alkollü İçecekler > Viskiler (Kadeh)</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 392.5, 'Ürün_Sayısı': 16}</td></tr><tr><td><strong>Alkollü İçecekler > Vodka & Gin</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 333.0, 'Ürün_Sayısı': 5}</td></tr><tr><td><strong>Alkollü İçecekler > Şampanya & Köpüklü Şarap</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 2678.75, 'Ürün_Sayısı': 4}</td></tr><tr><td><strong>Başlangıçlar & Atıştırmalıklar > Başlangıçlar & Atıştırmalıklar</strong></td><td>{'Ort_Görüntülenme': 14.0, 'Ort_Fiyat': 527.69, 'Ürün_Sayısı': 13}</td></tr><tr><td><strong>Bowl > Bowl</strong></td><td>{'Ort_Görüntülenme': 30.0, 'Ort_Fiyat': 563.33, 'Ürün_Sayısı': 6}</td></tr><tr><td><strong>Bubble Tea > Bubble Tea</strong></td><td>{'Ort_Görüntülenme': 4.25, 'Ort_Fiyat': 191.25, 'Ürün_Sayısı': 4}</td></tr><tr><td><strong>COOKSHOP Detox > COOKSHOP Detox</strong></td><td>{'Ort_Görüntülenme': 1.67, 'Ort_Fiyat': 180.0, 'Ürün_Sayısı': 3}</td></tr><tr><td><strong>COOKSHOP Ev Yapımı Limonata > COOKSHOP Ev Yapımı Limonata</strong></td><td>{'Ort_Görüntülenme': 0.0, 'Ort_Fiyat': 190.0, 'Ürün_Sayısı': 3}</td></tr><tr><td><strong>COOKSHOP Ev Yapımı Soğuk Çaylar > COOKSHOP Ev Yapımı Soğuk Çaylar</strong></td><td>{'Ort_Görüntülenme': 2.0, 'Ort_Fiyat': 185.0, 'Ürün_Sayısı': 3}</td></tr><tr><td><strong>COOKSHOP Special > COOKSHOP Special</strong></td><td>{'Ort_Görüntülenme': 9.73, 'Ort_Fiyat': 183.18, 'Ürün_Sayısı': 11}</td></tr><tr><td><strong>COOKSHOP Çay > COOKSHOP Çay</strong></td><td>{'Ort_Görüntülenme': 0.91, 'Ort_Fiyat': 165.0, 'Ürün_Sayısı': 11}</td></tr><tr><td><strong>Deniz Mahsülleri > Deniz Mahsülleri</strong></td><td>{'Ort_Görüntülenme': 23.33, 'Ort_Fiyat': 706.67, 'Ürün_Sayısı': 3}</td></tr><tr><td><strong>Et Yemekleri > Et Yemekleri</strong></td><td>{'Ort_Görüntülenme': 17.4, 'Ort_Fiyat': 749.0, 'Ürün_Sayısı': 5}</td></tr><tr><td><strong>Hamburger > Hamburger</strong></td><td>{'Ort_Görüntülenme': 37.14, 'Ort_Fiyat': 552.86, 'Ürün_Sayısı': 7}</td></tr><tr><td><strong>Kahvaltılar > Kahvaltılar</strong></td><td>{'Ort_Görüntülenme': 9.68, 'Ort_Fiyat': 414.55, 'Ürün_Sayısı': 22}</td></tr><tr><td><strong>Kahveler > Kahveler</strong></td><td>{'Ort_Görüntülenme': 0.8, 'Ort_Fiyat': 174.67, 'Ürün_Sayısı': 15}</td></tr><tr><td><strong>Köfteler > Köfteler</strong></td><td>{'Ort_Görüntülenme': 23.5, 'Ort_Fiyat': 597.5, 'Ürün_Sayısı': 4}</td></tr><tr><td><strong>Makarnalar > Makarnalar</strong></td><td>{'Ort_Görüntülenme': 13.67, 'Ort_Fiyat': 497.08, 'Ürün_Sayısı': 12}</td></tr><tr><td><strong>Milkshakeler > Milkshakeler</strong></td><td>{'Ort_Görüntülenme': 5.0, 'Ort_Fiyat': 195.0, 'Ürün_Sayısı': 3}</td></tr><tr><td><strong>Pizzalar > Pizzalar</strong></td><td>{'Ort_Görüntülenme': 37.83, 'Ort_Fiyat': 501.67, 'Ürün_Sayısı': 6}</td></tr><tr><td><strong>Quesadilla & Dürüm > Quesadilla & Dürüm</strong></td><td>{'Ort_Görüntülenme': 10.5, 'Ort_Fiyat': 581.25, 'Ürün_Sayısı': 4}</td></tr><tr><td><strong>Rafinera Fit Lezzetler > Rafinera Fit Lezzetler</strong></td><td>{'Ort_Görüntülenme': 21.83, 'Ort_Fiyat': 570.83, 'Ürün_Sayısı': 6}</td></tr><tr><td><strong>Salatalar > Salatalar</strong></td><td>{'Ort_Görüntülenme': 15.79, 'Ort_Fiyat': 455.0, 'Ürün_Sayısı': 14}</td></tr><tr><td><strong>Soft İçecekler > Soft İçecekler</strong></td><td>{'Ort_Görüntülenme': 0.67, 'Ort_Fiyat': 137.33, 'Ürün_Sayısı': 15}</td></tr><tr><td><strong>Soğuk Kahveler > Soğuk Kahveler</strong></td><td>{'Ort_Görüntülenme': 6.29, 'Ort_Fiyat': 205.0, 'Ürün_Sayısı': 7}</td></tr><tr><td><strong>Tatlılar > Tatlılar</strong></td><td>{'Ort_Görüntülenme': 8.6, 'Ort_Fiyat': 322.33, 'Ürün_Sayısı': 15}</td></tr><tr><td><strong>Tavuk Yemekleri > Tavuk Yemekleri</strong></td><td>{'Ort_Görüntülenme': 32.22, 'Ort_Fiyat': 564.44, 'Ürün_Sayısı': 9}</td></tr><tr><td><strong>Tazeler > Tazeler</strong></td><td>{'Ort_Görüntülenme': 1.75, 'Ort_Fiyat': 171.25, 'Ürün_Sayısı': 4}</td></tr><tr><td><strong>Tostlar > Tostlar</strong></td><td>{'Ort_Görüntülenme': 9.17, 'Ort_Fiyat': 419.17, 'Ürün_Sayısı': 6}</td></tr><tr><td><strong>Yanında > Yanında</strong></td><td>{'Ort_Görüntülenme': 7.75, 'Ort_Fiyat': 166.25, 'Ürün_Sayısı': 4}</td></tr><tr><td><strong>Çocuk Menüleri > Çocuk Menüleri</strong></td><td>{'Ort_Görüntülenme': 20.5, 'Ort_Fiyat': 343.75, 'Ürün_Sayısı': 4}</td></tr><tr><td><strong>Çorbalar > Çorbalar</strong></td><td>{'Ort_Görüntülenme': 6.67, 'Ort_Fiyat': 231.67, 'Ürün_Sayısı': 3}</td></tr></table></div>
+            </div>
+            
+            <div class="insight-card" style="border-left: 4px solid #6f42c1;">
+                <h4>Şubeler Arası Fiyat Karşılaştırması</h4>
+                <div class="insight-data"><table class='data-table'><tr><td><strong>tuzla_ortalama</strong></td><td>503.31</td></tr><tr><td><strong>kosuyolu_ortalama</strong></td><td>503.31</td></tr><tr><td><strong>fark_yuzde</strong></td><td>0.0</td></tr></table></div>
+            </div>
+            
+                    </div>
+                    
+                    <div class="section">
+                        <h2>📈 Trend Analizi</h2>
+                        
+            <div class="trend-card">
+                <h4>📈 Yükselen Trendler</h4>
+                <div class="trend-data"><table class='data-table'><tr><th>Ürün</th><th>Değişim %</th></tr><tr><td>Somon Izgara</td><td style='color: #28a745;'>333.3%</td></tr><tr><td>Strawberry Mojito</td><td style='color: #28a745;'>233.3%</td></tr><tr><td>Negroni</td><td style='color: #28a745;'>200.0%</td></tr><tr><td>Izgara Tavuk Salata</td><td style='color: #28a745;'>158.3%</td></tr><tr><td>Paçanga Böreği</td><td style='color: #28a745;'>150.0%</td></tr></table></div>
+            </div>
+            
+            <div class="trend-card">
+                <h4>📉 Düşen Trendler</h4>
+                <div class="trend-data"><table class='data-table'><tr><th>Ürün</th><th>Değişim %</th></tr><tr><td>Detox Clean</td><td style='color: #dc3545;'>-88.2%</td></tr><tr><td>Mojito</td><td style='color: #dc3545;'>-83.3%</td></tr><tr><td>Fresh Cherry Tea</td><td style='color: #dc3545;'>-78.6%</td></tr><tr><td>Ruben Sandviç</td><td style='color: #dc3545;'>-77.8%</td></tr><tr><td>Sprite Blossom</td><td style='color: #dc3545;'>-76.5%</td></tr></table></div>
+            </div>
+            
+                    </div>
+                    
+                    <div class="section">
+                        <h2>🎯 Akıllı Öneriler</h2>
+                        
+            <div class="recommendation-card" style="border-left: 4px solid #dc3545;">
+                <div class="rec-header">
+                    <h4>Acil Foto Ekleme</h4>
+                    <span class="priority-badge" style="background: #dc3545;">CRITICAL</span>
+                </div>
+                <p><strong>Açıklama:</strong> 10 ürünün fotoğrafını ekleyin</p>
+                <p><strong>Beklenen Etki:</strong> Görüntülenme %25-40 artabilir</p>
+                <p><strong>Efor Seviyesi:</strong> Düşük</p>
+            </div>
+            
+            <div class="recommendation-card" style="border-left: 4px solid #fd7e14;">
+                <div class="rec-header">
+                    <h4>Yükselen Ürünleri Öne Çıkar</h4>
+                    <span class="priority-badge" style="background: #fd7e14;">HIGH</span>
+                </div>
+                <p><strong>Açıklama:</strong> Trend ürünlere özel kampanya yapın</p>
+                <p><strong>Beklenen Etki:</strong> Satış %15-25 artabilir</p>
+                <p><strong>Efor Seviyesi:</strong> Orta</p>
+            </div>
+            
+            <div class="recommendation-card" style="border-left: 4px solid #20c997;">
+                <div class="rec-header">
+                    <h4>Menü Optimizasyonu</h4>
+                    <span class="priority-badge" style="background: #20c997;">MEDIUM</span>
+                </div>
+                <p><strong>Açıklama:</strong> Düşük performanslı kategorileri gözden geçirin</p>
+                <p><strong>Beklenen Etki:</strong> Genel performans %10-15 artabilir</p>
+                <p><strong>Efor Seviyesi:</strong> Yüksek</p>
+            </div>
+            
+                    </div>
+                </div>
+                
+                <div class="footer">
+                    <p>📅 Rapor Tarihi: 21 September 2025, 03:07</p>
+                    <p><strong>SGS Advanced - Powered by AI</strong></p>
+                    <p>🧠 Yapay zeka destekli restoran optimizasyonu</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        
